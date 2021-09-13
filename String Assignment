@@ -17,9 +17,9 @@ report = f'''{Gullit} scored in the {goal_0}nd minute
 #2.1
 player = 'Adri van Tiggelen'
 #2.2
-first_name = player[player.find('A'):(player.find(' v'))]
+first_name = player[0:(player.find(' '))]
 #2.3
-last_name_len = len(player[player.find('v'):])
+last_name_len = (len(player[player.find(' '):])-1)
 #2.4
 name_short = f'{first_name[0]}. {player[(-1)*last_name_len:]}'
 #2.5
